@@ -19,7 +19,7 @@
 <div data-role="page" id="players">
     <div data-role="header" data-position="fixed">
         <h1>Players</h1>
-        <a href="#rules" class="ui-btn-right" data-icon="ui-btn-icon-left ui-icon-lock">Rules</a>
+        <a href="rules.html" class="ui-btn-right" data-icon="ui-btn-icon-left ui-icon-lock">Rules</a>
     </div><!-- /header -->
 
     <div data-role="content">
@@ -43,91 +43,6 @@
         </div>
     </div><!-- /footer -->
 </div><!-- /page -->
-
-<div data-role="page" id="rules">
-    <div data-role="header">
-        <h1>Rules</h1>
-        <a href="#" class="ui-btn-right" data-icon="ui-btn-icon ui-icon-plus">Add Rule</a>
-    </div><!-- /header -->
-
-    <div data-role="content">
-        <h2>Grant's Rules</h2>
-            <ul  data-inset="true" data-role="listview">
-               <li> <a href="#" data-transition="slide" >Weekday Rules</a>
-                 <span class="flipper">
-                      <label for="flip2" class="ui-hidden-accessible">Flip switch:</label>
-                      <select name="flip2" id="flip2" data-role="slider">
-                          <option value="off">Off</option>
-                          <option value="on">On</option>
-                      </select>
-                  </span>
-               </li>
-               <li>
-                 <a href="#" data-transition="slide">Weekend Rules</a>
-                 <span class="flipper">
-                      <label for="flip2" class="ui-hidden-accessible">Flip switch:</label>
-                      <select name="flip2" id="flip2" data-role="slider">
-                          <option value="off">Off</option>
-                          <option value="on">On</option>
-                      </select>
-                  </span>
-               </li>
-               <li>
-                 <a href="#" data-transition="slide">Maximum Play Time Per Day</a>
-                 <span class="flipper">
-                      <label for="flip2" class="ui-hidden-accessible">Flip switch:</label>
-                      <select name="flip2" id="flip2" data-role="slider">
-                          <option value="off">Off</option>
-                          <option value="on">On</option>
-                      </select>
-                  </span>
-              </li>
-            </ul>
-        <h2>Steph's Rules</h2>
-            <ul  data-inset="true" data-role="listview">
-               <li> <a href="#" data-transition="slide" >Online Access</a>
-                 <span class="flipper">
-                      <label for="flip2" class="ui-hidden-accessible">Flip switch:</label>
-                      <select name="flip2" id="flip2" data-role="slider">
-                          <option value="off">Off</option>
-                          <option value="on">On</option>
-                      </select>
-                  </span>
-               </li>
-               <li>
-                 <a href="#" data-transition="slide">Guests Over</a>
-                 <span class="flipper">
-                      <label for="flip2" class="ui-hidden-accessible">Flip switch:</label>
-                      <select name="flip2" id="flip2" data-role="slider">
-                          <option value="off">Off</option>
-                          <option value="on">On</option>
-                      </select>
-                  </span>
-               </li>
-               <li>
-                 <a href="#" data-transition="slide">Session Time Cap</a>
-                 <span class="flipper">
-                      <label for="flip2" class="ui-hidden-accessible">Flip switch:</label>
-                      <select name="flip2" id="flip2" data-role="slider">
-                          <option value="off">Off</option>
-                          <option value="on">On</option>
-                      </select>
-                  </span>
-              </li>
-            </ul>
-    </div><!-- /content -->
-
-    <div data-role="footer" data-position="fixed">
-        <div data-role="navbar">
-            <ul>
-                <li><a href="#players" class="ui-btn-active ui-state-persist">Players</a></li>
-                <!-- TODO 4a: add an appropriate href value to the code below such that clicking the button will take you to the team page -->
-                <li><a href="#games">Games</a></li>
-            </ul>
-        </div>
-    </div><!-- /footer -->
-</div><!-- /page -->
-
 
 <div data-role="page" id="games">
 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <!--update view based on the device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--get jquery mobile libraries and css-->
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css"></link>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<div data-role="page" id="add-rule">
+  <div data-role="header">
+      <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
+      <h1>Add Rule</h1>
+  </div>
+  <div data-role="content">
+      <h1>Create a new rule:</h1>
+      <fieldset class="ui-field-contain">
+          <label for="target">Who is this restriction for?</label>
+          <select name="target" id="target">
+              <option value="all">Everyone</option>
+              <option value="grant">Grant</option>
+              <option value="steph">Steph</option>
+              <option value="chase">Chase</option>
+          </select>
+      </fieldset>
+      <fieldset class="ui-field-contain">
+          <label for="target">What type of restrictions would you like to set?</label>
+            <div data-role="controlgroup">
+              <label for="red">Play Window</label>
+              <input type="checkbox" name="favcolor" id="red" value="red">
+              <label for="green">Maximum Session Time</label>
+              <input type="checkbox" name="favcolor" id="green" value="green">
+              <label for="blue">Game Content</label>
+              <input type="checkbox" name="favcolor" id="blue" value="blue">
+              <label for="bdlue">Online Access</label>
+              <input type="checkbox" name="favcolor" id="bdlue" value="bdlue">
+            </div>
+      </fieldset>
+  </div><!-- /content -->
+  <div data-role="footer" data-position="fixed">
+      <a class='ui-btn ui-state-persist' href="rules.html" data-iconpos="center">Next</a>
+  </div>
+</div>
+
+</html>

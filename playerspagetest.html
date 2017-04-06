@@ -16,9 +16,9 @@
 
 
 <div data-role="page" id="players">
-    <div data-role="header">
+    <div data-role="header" data-position="fixed">
         <h1>Players</h1>
-        <a href="#" data-rel="back" class="ui-btn-right" data-icon="ui-btn-icon-left ui-icon-lock">Rules</a>
+        <a href="#rules" class="ui-btn-right" data-icon="ui-btn-icon-left ui-icon-lock">Rules</a>
     </div><!-- /header -->
 
     <div data-role="content">
@@ -32,7 +32,35 @@
         </ul>
     </div><!-- /content -->
 
-    <div data-role="footer">
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#players" class="ui-btn-active ui-state-persist">Players</a></li>
+                <!-- TODO 4a: add an appropriate href value to the code below such that clicking the button will take you to the team page -->
+                <li><a href="#games">Games</a></li>
+            </ul>
+        </div>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="rules">
+    <div data-role="header">
+        <h1>Rules</h1>
+    </div><!-- /header -->
+
+    <div data-role="content">
+        <h2>Grant's Rules</h2>
+        <h2>Steph's Rules</h2>
+
+        <!-- TODO 1: make these links appear as mobile buttons using the ui-btn class -->
+         <ul  data-inset="true" data-role="listview" data-filter="true">
+            <li><a href="#all" data-transition="slide">All</a></li>
+            <li><a href="#grant" data-transition="slide">Grant</a></li>
+            <li><a href="#steph" data-transition="slide">Steph</a></li>
+        </ul>
+    </div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
         <div data-role="navbar">
             <ul>
                 <li><a href="#players" class="ui-btn-active ui-state-persist">Players</a></li>
@@ -46,7 +74,7 @@
 
 <div data-role="page" id="games">
 
-    <div data-role="header">
+    <div data-role="header" data-position="fixed">
         <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
 
         <h1>Games</h1>
@@ -82,7 +110,7 @@
         <br>
     </body><!-- /content -->
 
-        <div data-role="footer">
+        <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>
                     <li><a href="#players">Players</a></li>
@@ -96,7 +124,7 @@
 
 
 <div data-role="page" id="grant">
-    <div data-role="header">
+    <div data-role="header" data-position="fixed">
         <!-- TODO 5: add a back button to the header; include the back icon on your back button -->
         <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
         <h1>Grant</h1>
@@ -111,7 +139,7 @@
     <label for="date">Date Input:</label>
     <input type="date" name="date" id="date" value=""  />
 
-    <div data-role="footer">
+    <div data-role="footer" data-position="fixed">
     </div><!-- /footer -->
 </div>
 

@@ -7,6 +7,7 @@
     <!--get jquery mobile libraries and css-->
 
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css"></link>
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
@@ -46,18 +47,74 @@
 <div data-role="page" id="rules">
     <div data-role="header">
         <h1>Rules</h1>
+        <a href="#" class="ui-btn-right" data-icon="ui-btn-icon ui-icon-plus">Add Rule</a>
     </div><!-- /header -->
 
     <div data-role="content">
         <h2>Grant's Rules</h2>
+            <ul  data-inset="true" data-role="listview">
+               <li> <a href="#" data-transition="slide" >Weekday Rules</a>
+                 <span class="flipper">
+                      <label for="flip2" class="ui-hidden-accessible">Flip switch:</label>
+                      <select name="flip2" id="flip2" data-role="slider">
+                          <option value="off">Off</option>
+                          <option value="on">On</option>
+                      </select>
+                  </span>
+               </li>
+               <li>
+                 <a href="#" data-transition="slide">Weekend Rules</a>
+                 <span class="flipper">
+                      <label for="flip2" class="ui-hidden-accessible">Flip switch:</label>
+                      <select name="flip2" id="flip2" data-role="slider">
+                          <option value="off">Off</option>
+                          <option value="on">On</option>
+                      </select>
+                  </span>
+               </li>
+               <li>
+                 <a href="#" data-transition="slide">Maximum Play Time Per Day</a>
+                 <span class="flipper">
+                      <label for="flip2" class="ui-hidden-accessible">Flip switch:</label>
+                      <select name="flip2" id="flip2" data-role="slider">
+                          <option value="off">Off</option>
+                          <option value="on">On</option>
+                      </select>
+                  </span>
+              </li>
+            </ul>
         <h2>Steph's Rules</h2>
-
-        <!-- TODO 1: make these links appear as mobile buttons using the ui-btn class -->
-         <ul  data-inset="true" data-role="listview" data-filter="true">
-            <li><a href="#all" data-transition="slide">All</a></li>
-            <li><a href="#grant" data-transition="slide">Grant</a></li>
-            <li><a href="#steph" data-transition="slide">Steph</a></li>
-        </ul>
+            <ul  data-inset="true" data-role="listview">
+               <li> <a href="#" data-transition="slide" >Online Access</a>
+                 <span class="flipper">
+                      <label for="flip2" class="ui-hidden-accessible">Flip switch:</label>
+                      <select name="flip2" id="flip2" data-role="slider">
+                          <option value="off">Off</option>
+                          <option value="on">On</option>
+                      </select>
+                  </span>
+               </li>
+               <li>
+                 <a href="#" data-transition="slide">Guests Over</a>
+                 <span class="flipper">
+                      <label for="flip2" class="ui-hidden-accessible">Flip switch:</label>
+                      <select name="flip2" id="flip2" data-role="slider">
+                          <option value="off">Off</option>
+                          <option value="on">On</option>
+                      </select>
+                  </span>
+               </li>
+               <li>
+                 <a href="#" data-transition="slide">Session Time Cap</a>
+                 <span class="flipper">
+                      <label for="flip2" class="ui-hidden-accessible">Flip switch:</label>
+                      <select name="flip2" id="flip2" data-role="slider">
+                          <option value="off">Off</option>
+                          <option value="on">On</option>
+                      </select>
+                  </span>
+              </li>
+            </ul>
     </div><!-- /content -->
 
     <div data-role="footer" data-position="fixed">
@@ -189,7 +246,7 @@
 </div>
 
 <div data-role="page" id="masseffect">
-<head>
+    <head>
         <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
         <title>Mass Effect</title>
         <!-- <link rel="stylesheet" href="mass_effect_style.css" type="text/css"> -->
@@ -210,44 +267,6 @@
         <br>
     </body>
 </div>
-
-
-
-
-<div data-role="page" id="ofra">
-    <div data-role="header">
-        <!-- TODO 5: add a back button to the header; include the back icon on your back button -->
-        <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
-        <h1>Ofra</h1>
-    </div>
-    <div data-role="content">
-        <h3>Ofra is the instructor for CS 179.</h3>
-        <img src="pics/t3.jpg" alt="Ofra" width="150px">
-    </div>
-
-    <div data-role="footer">
-        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
-    </div><!-- /footer -->
-</div>
-
-<!--TODO 6: add a page for your studio TF, similar to the "ofra" page, and make the list in the "team" page link to it from the appropriate button -->
-<div data-role="page" id="amy">
-    <div data-role="header">
-        <!-- TODO 5: add a back button to the header; include the back icon on your back button -->
-        <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
-        <h1>Amy</h1>
-    </div>
-    <div data-role="content">
-        <h3>Amy is the dopest TF that ever there was for CS 179.</h3>
-        <img src="pics/t4.jpg" alt="Ofra" width="150px">
-    </div>
-
-    <div data-role="footer">
-        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
-    </div><!-- /footer -->
-</div>
-
-<!--TODO 7: add a jQuery mobile page transition to the link from the "team" page to your TF page -->
 
 </body>
 </html>

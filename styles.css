@@ -1,0 +1,8 @@
+/*Flipper style from http://jsfiddle.net/H4UzV/*/
+
+.flipper
+  {
+    position:absolute;
+    right:5px;
+    top:-2px;
+  }

@@ -16,6 +16,7 @@
 
 <div data-role="page" id="players">
     <div data-role="header" data-position="fixed">
+      <a href="#popupBasic" class="ui-btn-left" data-rel="popup" data-position-to="window">Alert</a>
         <h1>Players</h1>
         <a href="rules.html" class="ui-btn-right" data-transition="slide" data-ajax="false" data-icon="ui-btn-icon-left ui-icon-lock">Rules</a>
     </div><!-- /header -->
@@ -29,7 +30,13 @@
             <li><a href="chase-cal.html" data-ajax="false" data-transition="slide">Chase</a></li>
         </ul>
     </div><!-- /content -->
-
+    <div data-role="popup" id="popupBasic">
+      <h3 style="text-align: center;">Notification</h3>
+      <p style="text-align: center;">Chase has exceeded his maximum session time.</p>
+      <a href="#" data-rel="back" class="ui-btn ui-btn-active">Send Reminder</a>
+      <a href="#" data-rel="back" class="ui-btn left">Power Down Console</a>
+      <a href="#" data-rel="back" class="ui-btn left">Ignore</a>
+    </div>
     <div data-role="footer" data-position="fixed">
         <div data-role="navbar">
             <ul>
@@ -103,6 +110,7 @@
 
     </div><!-- /footer -->
 </div>
+
 
 
 </html>

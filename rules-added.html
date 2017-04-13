@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Rules</title>
+    <title>Page Title</title>
     <!--update view based on the device-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--get jquery mobile libraries and css-->
@@ -16,7 +16,7 @@
 
 <div data-role="page" id="rules">
     <div data-role="header">
-        <a href="../players.html" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
+        <a href="players.html" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
         <h1>Rules</h1>
         <a href="add-rule.html" class="ui-btn-right" data-icon="ui-btn-icon ui-icon-plus">Add Rule</a>
     </div>
@@ -86,6 +86,18 @@
                   </span>
               </li>
             </ul>
+            <h2>Chase's Rules</h2>
+                <ul  data-inset="true" data-role="listview">
+                   <li> <a href="#" data-transition="slide" >Chase's Weekend Rules</a>
+                     <span class="flipper">
+                          <label for="flip2" class="ui-hidden-accessible">Flip switch:</label>
+                          <select name="flip2" id="flip2" data-role="slider">
+                              <option value="off">Off</option>
+                              <option value="on">On</option>
+                          </select>
+                      </span>
+                   </li>
+                </ul>
     </div>
 
     <div data-role="footer" data-position="fixed">

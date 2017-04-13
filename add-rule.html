@@ -36,14 +36,33 @@
       <fieldset class="ui-field-contain">
           <label for="target">What type of restrictions would you like to set?</label>
             <div data-role="controlgroup">
-              <label for="red">Play Window</label>
+              <label href="players.html" for="red">Play Window</label>
               <input type="checkbox" name="favcolor" id="red" value="red">
+              <br>
+              <div data-role="controlgroup" data-type="horizontal" data-mini="true" align="center">
+                  <input type="time" id="search-control-group" data-wrapper-class="controlgroup-textinput ui-btn">
+                  <button class="ui-btn"> to </button>
+                  <input type="time" class="timepicker" id="search-control-group" data-wrapper-class="controlgroup-textinput ui-btn">
+              </div>
+              <br>
               <label for="green">Maximum Session Time</label>
               <input type="checkbox" name="favcolor" id="green" value="green">
+              <br>
+              <div data-role="controlgroup" data-type="horizontal" data-mini="true" align="center">
+                  <input type="text" id="search-control-group" data-wrapper-class="controlgroup-textinput ui-btn">
+                  <button>Minutes</button>
+              </div>
+              <br>
               <label for="blue">Game Content</label>
               <input type="checkbox" name="favcolor" id="blue" value="blue">
               <label for="bdlue">Online Access</label>
               <input type="checkbox" name="favcolor" id="bdlue" value="bdlue">
+            </div>
+            <div data-role="popup" id="popupBasic">
+              <h3 style="text-align: center;">Notification</h3>
+              <p style="text-align: center;">Chase has exceeded his maximum session time. Would you like to power down the console?</p>
+              <a href="#" data-rel="back" class="ui-btn ui-btn-active">Yes</a>
+              <a href="#" data-rel="back" class="ui-btn left">No</a>
             </div>
       </fieldset>
   </div><!-- /content -->

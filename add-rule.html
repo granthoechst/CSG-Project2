@@ -16,18 +16,21 @@
 
 <div data-role="page" id="add-rule">
   <div data-role="header">
-      <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
       <h1>Add Rule</h1>
   </div>
   <div data-role="content">
       <h1>Create a new rule:</h1>
+      <div class="ui-field-contain">
+          <label for="rule-name">Rule Name:</label>
+          <input type="rule-name" name="rule-name" id="rule-name" placeholder="e.g. Chase's Weekend Rules">
+      </div>
       <fieldset class="ui-field-contain">
           <label for="target">Who is this restriction for?</label>
           <select name="target" id="target">
+              <option value="chase">Chase</option>
               <option value="all">Everyone</option>
               <option value="grant">Grant</option>
               <option value="steph">Steph</option>
-              <option value="chase">Chase</option>
           </select>
       </fieldset>
       <fieldset class="ui-field-contain">
@@ -45,8 +48,13 @@
       </fieldset>
   </div><!-- /content -->
   <div data-role="footer" data-position="fixed">
-      <a class='ui-btn ui-state-persist' href="rules.html" data-iconpos="center">Next</a>
-  </div>
+      <div data-role="navbar">
+          <ul>
+              <li><a href="rules.html">Cancel</a></li>
+              <li><a href="rules-added.html" class="ui-btn-active ui-state-persist">Create Rule!</a></li>
+          </ul>
+      </div>
+  </div><!-- /footer -->
 </div>
 
 </html>

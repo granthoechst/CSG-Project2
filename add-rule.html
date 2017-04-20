@@ -21,10 +21,11 @@
   </div>
   <div data-role="content">
       <h1>Create a new rule:</h1>
-      <div class="ui-field-contain">
+      <div data-role="fieldcontain" class="ui-field-contain">
           <label for="rule-name">Rule Name:</label>
-          <input type="rule-name" name="rule-name" id="rule-name" placeholder="e.g. Chase's Weekend Rules">
-      </div>
+          <input type="text" name="rule-name" id="rule-name" placeholder="e.g. Chase's Weekend Rules"value=""  />
+      </div
+      <br>
       <fieldset class="ui-field-contain">
           <label for="target">Who is this restriction for?</label>
           <select name="target" id="target">
@@ -33,6 +34,17 @@
               <option value="grant">Grant</option>
               <option value="steph">Steph</option>
           </select>
+      </fieldset>
+      <p>When does this rule apply?</p>
+      <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true" align="center">
+          <label for="target">When does this rule apply?</label>
+          <div class="ui-checkbox"><input type="checkbox" name="Sunday" id="Sunday" class="custom"><label for="Sunday" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-corner-left ui-btn-up-c ui-checkbox-on ui-btn-active"><span class="ui-btn-inner ui-corner-left"><span class="ui-btn-text">S</span></span></label></div>
+          <div class="ui-checkbox"><input type="checkbox" name="Monday" id="Monday" class="custom"><label for="Monday" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-checkbox-off ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">M</span></span></label></div>
+          <div class="ui-checkbox"><input type="checkbox" name="Tuesday" id="Tuesday" class="custom"><label for="Tuesday" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-checkbox-off ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">T</span></span></label></div>
+          <div class="ui-checkbox"><input type="checkbox" name="Wednesday" id="Wednesday" class="custom"><label for="Wednesday" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-checkbox-off ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">W</span></span></label></div>
+          <div class="ui-checkbox"><input type="checkbox" name="Thursday" id="Thursday" class="custom"><label for="Thursday" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-checkbox-off ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Th</span></span></label></div>
+          <div class="ui-checkbox"><input type="checkbox" name="Friday" id="Friday" class="custom"><label for="Friday" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-checkbox-off ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">F</span></span></label></div>
+          <div class="ui-checkbox"><input type="checkbox" name="Saturday" id="Saturday" class="custom"><label for="Saturday" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-corner-right ui-controlgroup-last ui-checkbox-off ui-btn-up-c"><span class="ui-btn-inner ui-corner-right ui-controlgroup-last"><span class="ui-btn-text">S</span></span></label></div>
       </fieldset>
       <fieldset class="ui-field-contain">
           <label for="target">What type of restrictions would you like to set?</label>
@@ -68,8 +80,17 @@
               </div>
               <br>
               <label for="bdlue">Online Access</label>
-              <input type="checkbox" name="favcolor" id="bdlue" value="bdlue">
+              <input type="checkbox" name="favcolor" id="bdlue" value="bdle">
+              <br>
+              <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true" align="center">
+                  <div class="ui-checkbox"><input type="checkbox" name="checkbox-6" id="checkbox-6" class="custom"><label for="checkbox-6" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-corner-left ui-btn-up-c ui-checkbox-on ui-btn-active"><span class="ui-btn-inner ui-corner-left"><span class="ui-btn-text">Chat</span></span></label></div>
+                  <div class="ui-checkbox"><input type="checkbox" name="checkbox-7" id="checkbox-7" class="custom"><label for="checkbox-7" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-checkbox-off ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Friends Only</span></span></label></div>
+                  <div class="ui-checkbox"><input type="checkbox" name="checkbox-8" id="checkbox-8" class="custom"><label for="checkbox-8" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-corner-right ui-controlgroup-last ui-checkbox-off ui-btn-up-c"><span class="ui-btn-inner ui-corner-right ui-controlgroup-last"><span class="ui-btn-text">Web</span></span></label></div>
+              </fieldset>
+              </div>
+              <br>
             </div>
+            <div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="null" data-iconpos="null" data-theme="b" class="ui-btn ui-shadow ui-btn-corner-all ui-submit ui-btn-up-b" aria-disabled="false"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text"></span></span><button type="submit" href="rules-added.html" data-theme="b" name="submit" value="submit-value" class="ui-btn-hidden" aria-disabled="false">Create Rule</button></div>
             <div data-role="popup" id="popupBasic">
               <h3 style="text-align: center;">Notification</h3>
               <p style="text-align: center;">Chase has exceeded his maximum session time. Would you like to power down the console?</p>
@@ -78,6 +99,7 @@
             </div>
       </fieldset>
   </div><!-- /content -->
+
   <div data-role="footer" data-position="fixed">
       <div data-role="navbar">
           <ul>

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Players</title>
+    <title>GameSense</title>
     <!--update view based on the device-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--get jquery mobile libraries and css-->
@@ -15,10 +15,27 @@
 </head>
 
 <div data-role="page" id="players" data-theme="b">
+    <div data-role="panel" id="mypanel">
+    <h2 align="center">Games</h2>
+        <ul style="list-style: none;">
+            <br>
+            <li><a href="players.html" style="color: #ffffff">Home</a></li>
+            <br>
+            <li><a href="library.html" style="color: #ffffff">Library</a></li>
+            <br>
+            <li><a href="browse.html" style="color: #ffffff">Browse</a></li>
+            <br>
+            <li><a href="rules.html" style="color: #ffffff">Rules</a></li>
+            <br>
+            <li><a href="notifications.html" style="color: #ffffff">Notifications</a></li>
+        </ul>
+    </div><!-- /panel -->
     <div data-role="header" data-position="fixed">
-      <a href="#popupBasic" class="ui-btn-left" data-rel="popup" data-position-to="window">Alert</a>
-        <h1>Players</h1>
-        <a href="rules.html" class="ui-btn-right" data-transition="slide" data-ajax="false" data-icon="ui-btn-icon-left ui-icon-lock">Rules</a>
+    <a href="#mypanel" class="ui-btn-left" data-icon="bars">Games</a>
+    
+        <h1>GameSense</h1>
+    <a href="#popupBasic" class="ui-btn-right" data-rel="popup" data-position-to="window">Alert</a>
+    <!-- <a href="rules.html" class="ui-btn-right" data-transition="slide" data-ajax="false" data-icon="ui-btn-icon-left ui-icon-lock">Rules</a> -->
     </div><!-- /header -->
 
     <div data-role="content">
@@ -41,27 +58,27 @@
     </div> -->
 
 
-    <div data-role="popup" id="popupBasic">
+    <div data-role="popup" id="popupBasic" data-theme="a">
       <h3 style="text-align: center;">Notification</h3>
       <p style="text-align: center;">Chase has exceeded his maximum session time.</p>
       <a href="#" data-rel="back" class="ui-btn ui-btn-active">Send Reminder</a>
       <a href="#" data-rel="back" class="ui-btn left">Power Down Console</a>
       <a href="#" data-rel="back" class="ui-btn left">Ignore</a>
     </div>
-    <div data-role="footer" data-position="fixed">
+    <!-- <div data-role="footer" data-position="fixed">
         <div data-role="navbar">
             <ul>
                 <li><a href="players.html" class="ui-btn-active ui-state-persist">Players</a></li>
                 <li><a href="games.html">Games</a></li>
             </ul>
         </div>
-    </div><!-- /footer -->
+    </div> --><!-- /footer -->
 </div><!-- /page -->
 
-<div data-role="page" id="grant">
-    <div data-role="header" data-position="fixed">
+<!-- <div data-role="page" id="grant">
+    <div data-role="header" data-position="fixed"> -->
         <!-- TODO 5: add a back button to the header; include the back icon on your back button -->
-        <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
+        <!-- <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
         <h1>Grant</h1>
         <a href="rules.html" class="ui-btn-right" data-transition="slide" data-icon="ui-btn-icon-left ui-icon-lock">Rules</a>
     </div>
@@ -75,8 +92,8 @@
     <input type="date" name="date" id="date" value=""  />
 
     <div data-role="footer" data-position="fixed">
-    </div><!-- /footer -->
-</div>
+    </div>--><!-- /footer -->
+<!--</div> -->
 
 
 

@@ -14,16 +14,25 @@
 		
 		$('#calendar').fullCalendar({
 			header: {
-				left: 'prev,next today',
+				left: 'prev,next',
 				center: 'title',
-				right: 'agendaWeek,agendaDay,listWeek'
+				right: 'agendaDay,listWeek'
 			},
 			defaultView: 'agendaDay',
 			defaultDate: '2017-04-12',
 			navLinks: true, // can click day/week names to navigate views
 			editable: false,
+			scrollTime: '15:00:00',
 			eventLimit: true, // allow "more" link when too many events
-			aspectRatio: 0.8,
+			aspectRatio: 1.2,
+			views: {
+		        agenda: {
+		        	titleFormat: 'MM/D/YYYY'
+		        },
+		        list: {
+		            titleFormat: 'MMM D'
+		        }
+		    },
 			events: [
 				// {
 				// 	title: 'All Day Event',
@@ -101,11 +110,11 @@
 </head>
 <body>
 
-	<div data-role="header" data-position="fixed">
+	<!-- <div data-role="header" data-position="fixed">
         <center><h1>Grant's Playtime</h1></center>
         <a href="players.html" data-rel="back" class="ui-btn" data-ajax="false" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
         <a href="rules.html" class="ui-btn-right" data-transition="slide" data-ajax="false" data-icon="ui-btn-icon-left ui-icon-lock">Rules</a>
-    </div>
+    </div> -->
 
 	<div id='calendar'></div>
 

@@ -6,3 +6,12 @@
     right:5px;
     top:-2px;
   }
+
+.propic
+{
+	 -webkit-border-radius: 50px;
+  	-moz-border-radius: 50px;
+  	border-radius: 50px;
+  	border-top-left-radius: 50px !important;
+  	border-bottom-left-radius: 50px !important;
+}

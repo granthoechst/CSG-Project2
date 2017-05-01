@@ -21,27 +21,45 @@
         <a href="add-rule.html" class="ui-btn-right" data-transition="slide" data-ajax="false" data-icon="ui-btn-icon-left ui-icon-lock">Add Rule</a>
     </div><!-- /header -->
 
+    <div>
+      <img class="propic" src="img/grant_propic.jpg" width="60px" height="60px" align="left" style="position:relative; left:18px;"/>
+      <h1 style="position:relative; left:40px; font-size:50px">Grant</h1>
+    </div>
     <div data-role="content">
-    	<div>
-    		<img class="propic" src="img/grant_propic.jpg" width="60px" height="60px" align="left"/>
-    		<h1 style="position:relative; left:30px; font-size:50px">Grant</h1>
-    		<p>Today</p><h2 style="font-size:30px;">3 hr 0 min</h2>
-    		<a href="game_info/gta.html" data-ajax="false"><img style = "position: relative; border-style:solid; border-color:red" src="img/gta5.jpg" width="60px" height="90px"/></a>
-    		<a href="game_info/halo5.html" data-ajax="false"><img style = "position: relative; left:15px" src="img/halo_5.png" width="60px" height="90px"/></a>
-    		<br>
-    		<p>Notifications</p>
-    		<a href="#popupBasic" data-rel="popup">Grant Played an M-Rated Game!</a>
+      <div data-role="collapsible" data-collapsed="false">
+         <h3>Time Played Today:</h3>
+         <h1 style="color:#8def93;" align="center">3 hr 0 min</h1>
+      </div>
+      <div data-role="collapsible" data-collapsed="false">
+          <h3>Recent Activity</h3>
+          <div class="ui-collapsible-content">
+            <ul data-role="listview">
+              <li data-role="list-divider">Monday, May 1, 2017</li>
+              <li><a href="#popupBasic" data-rel="popup" data-position-to="window" class="ui-btn">Play limit exceeded. <p style=" padding-top:2px;"class="ui-li-aside ui-li-desc"><strong>6:24</strong>PM</p></a></li>
+              <li><a href="#popupBasic" data-rel="popup" data-position-to="window" class="ui-btn">Played an M-rated game. <p style=" padding-top:2px;"class="ui-li-aside ui-li-desc"><strong>6:24</strong>PM</p></a></li>
+              <li data-role="list-divider">Sunday, April 30, 2017</li>
+              <li><a href="#popupBasic" data-rel="popup" data-position-to="window" class="ui-btn">Request from ChunkDirty. <p style=" padding-top:2px;"class="ui-li-aside ui-li-desc"><strong>6:24</strong>PM</p></a></li>
+            </ul>
+          </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="false">
+          <h3>Recently Played Games:</h3>
+          <div class="ui-grid-b" align="center">
+          	<div class="ui-block-a"><a href="game_info/gta.html" data-ajax="false"><img src="img/gta5.jpg" width="60px" height="90px"/></a></div>
+          	<div class="ui-block-b"><a href="game_info/halo5.html" data-ajax="false"><img src="img/halo_5.png" width="60px" height="90px"/></a></div>
+          	<div class="ui-block-c"><a href="game_info/gta.html" data-ajax="false"><img src="img/gta5.jpg" width="60px" height="90px"/></a></div>
+          </div>
+      </div>
+      <!-- <div data-role="collapsible" data-collapsed="false">
+          <h3>Calendar</h3>
+          <div data-role="content" id="popupVideo" data-overlay-theme="a" data-theme="a" data-tolerance="15,15" class="ui-content">
 
-         </div>
-         
+              <center><iframe src="../grant-cal.html" width="330" height="375"></iframe></center>
+
+          </div>
+      </div> -->
 
     </div><!-- /content -->
-
-    <div data-role="content" id="popupVideo" data-overlay-theme="a" data-theme="a" data-tolerance="15,15" class="ui-content">
-
-        <center><iframe src="../grant-cal.html" width="330" height="375"></iframe></center>
-     
-    </div>
 
 
     <div data-role="popup" id="popupBasic" data-theme="a">
@@ -52,7 +70,7 @@
       <a href="#" data-rel="back" class="ui-btn left">Ignore</a>
     </div>
     <div data-role="footer" data-position="fixed">
-        
+
     </div><!-- /footer -->
 </div><!-- /page -->
 

@@ -18,16 +18,22 @@
     <div data-role="header" data-position="fixed">
       <a href="players.html" class="ui-btn-left" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
         <h1>GameSense</h1>
-        <a href="rules.html" class="ui-btn-right" data-transition="slide" data-ajax="false" data-icon="ui-btn-icon-left ui-icon-lock">Rules</a>
+        <a href="add-rule.html" class="ui-btn-right" data-transition="slide" data-ajax="false" data-icon="ui-btn-icon-left ui-icon-lock">Add Rule</a>
     </div><!-- /header -->
 
     <div data-role="content">
     	<div>
-    		<img class="propic" src="img/grant_propic.jpg" width="50px" height="50px" align="left"/>
-    		<h1 style="position:relative; left:10px;">Grant</h1>
+    		<img class="propic" src="img/grant_propic.jpg" width="60px" height="60px" align="left"/>
+    		<h1 style="position:relative; left:30px; font-size:50px">Grant</h1>
+    		<p>Today</p><h2 style="font-size:30px;">3 hr 0 min</h2>
+    		<a href="game_info/gta.html" data-ajax="false"><img style = "position: relative; border-style:solid; border-color:red" src="img/gta5.jpg" width="60px" height="90px"/></a>
+    		<a href="game_info/halo5.html" data-ajax="false"><img style = "position: relative; left:15px" src="img/halo_5.png" width="60px" height="90px"/></a>
     		<br>
+    		<p>Notifications</p>
+    		<a href="#popupBasic" data-rel="popup">Grant Played an M-Rated Game!</a>
 
          </div>
+         
 
     </div><!-- /content -->
 
@@ -38,11 +44,11 @@
     </div>
 
 
-    <div data-role="popup" id="popupBasic">
+    <div data-role="popup" id="popupBasic" data-theme="a">
       <h3 style="text-align: center;">Notification</h3>
-      <p style="text-align: center;">Chase has exceeded his maximum session time.</p>
-      <a href="#" data-rel="back" class="ui-btn ui-btn-active">Send Reminder</a>
-      <a href="#" data-rel="back" class="ui-btn left">Power Down Console</a>
+      <p style="text-align: center;">Grant played an M-Rated game (Grand Theft Auto V).</p>
+      <a href="game_info/gta.html" data-rel="back" class="ui-btn ui-btn-active" data-ajax="false">Send Message</a>
+      <a href="#" data-rel="back" class="ui-btn left">Shut Down Console</a>
       <a href="#" data-rel="back" class="ui-btn left">Ignore</a>
     </div>
     <div data-role="footer" data-position="fixed">

@@ -14,9 +14,25 @@
 
 </head>
 
-<div data-role="page" id="rules">
+<div data-role="page" id="rules" data-theme="b">
+  <div data-role="panel" id="mypanel">
+    <h2 align="center">Games</h2>
+        <ul style="list-style: none;">
+            <br>
+            <li><a href="players.html" style="color: #ffffff">Home</a></li>
+            <br>
+            <li><a href="library.html" style="color: #ffffff">Library</a></li>
+            <br>
+            <li><a href="browse.html" style="color: #ffffff">Browse</a></li>
+            <br>
+            <li><a href="rules.html" style="color: #ffffff">Rules</a></li>
+            <br>
+            <li><a href="notifications.html" style="color: #ffffff">Notifications</a></li>
+        </ul>
+    </div><!-- /panel -->
     <div data-role="header">
-        <a href="../players.html" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
+        <a href="#mypanel" class="ui-btn-left" data-icon="bars">Menu</a>
+
         <h1>Rules</h1>
         <a href="add-rule.html" class="ui-btn-right" data-icon="ui-btn-icon ui-icon-plus">Add Rule</a>
     </div>
@@ -44,7 +60,7 @@
                   </span>
                </li>
                <li>
-                 <a href="#" data-transition="slide">Maximum Play Time Per Day</a>
+                 <a href="#" data-transition="slide">NO M Rated Content</a>
                  <span class="flipper">
                       <label for="flip2" class="ui-hidden-accessible">Flip switch:</label>
                       <select name="flip2" id="flip2" data-role="slider">
@@ -54,9 +70,9 @@
                   </span>
               </li>
             </ul>
-        <h2>Steph's Rules</h2>
+        <h2>Chase's Rules</h2>
             <ul  data-inset="true" data-role="listview">
-               <li> <a href="#" data-transition="slide" >Online Access</a>
+               <li> <a href="#" data-transition="slide" >Maximum Daily Play</a>
                  <span class="flipper">
                       <label for="flip2" class="ui-hidden-accessible">Flip switch:</label>
                       <select name="flip2" id="flip2" data-role="slider">
@@ -66,7 +82,7 @@
                   </span>
                </li>
                <li>
-                 <a href="#" data-transition="slide">Guests Over</a>
+                 <a href="#" data-transition="slide">Friend Chat</a>
                  <span class="flipper">
                       <label for="flip2" class="ui-hidden-accessible">Flip switch:</label>
                       <select name="flip2" id="flip2" data-role="slider">
@@ -75,26 +91,11 @@
                       </select>
                   </span>
                </li>
-               <li>
-                 <a href="#" data-transition="slide">Session Time Cap</a>
-                 <span class="flipper">
-                      <label for="flip2" class="ui-hidden-accessible">Flip switch:</label>
-                      <select name="flip2" id="flip2" data-role="slider">
-                          <option value="off">Off</option>
-                          <option value="on">On</option>
-                      </select>
-                  </span>
-              </li>
             </ul>
     </div>
 
     <div data-role="footer" data-position="fixed">
-        <div data-role="navbar">
-            <ul>
-                <li><a href="players.html" class="ui-btn-active ui-state-persist">Players</a></li>
-                <li><a href="games.html">Games</a></li>
-            </ul>
-        </div>
+        
     </div><!-- /footer -->
 </div><!-- /page -->
 

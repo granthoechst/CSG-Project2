@@ -14,7 +14,7 @@
 
 </head>
 
-<div data-role="page" id="add-rule">
+<div data-role="page" id="add-rule" data-theme="b">
   <div data-role="header">
       <a href="../rules.html" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
       <h1>Add Rule</h1>
@@ -32,7 +32,6 @@
               <option value="chase">Chase</option>
               <option value="all">Everyone</option>
               <option value="grant">Grant</option>
-              <option value="steph">Steph</option>
           </select>
       </fieldset>
       <p>When does this rule apply?</p>
@@ -62,7 +61,32 @@
               <input type="checkbox" name="favcolor" id="green" value="green">
               <br>
               <div data-role="controlgroup" data-type="horizontal" data-mini="true" align="center">
-                  <input type="text" id="search-control-group" data-wrapper-class="controlgroup-textinput ui-btn">
+                  <select>
+                      <option>15</option>
+                      <option>30</option>
+                      <option>45</option>
+                      <option>60 (1 hr)</option>
+                      <option>75</option>
+                      <option>90</option>
+                      <option>105</option>
+                      <option>120 (2 hrs)</option>
+                      <option>135</option>
+                      <option>150</option>
+                      <option>165</option>
+                      <option>180 (3 hrs)</option>
+                      <option>195</option>
+                      <option>210</option>
+                      <option>225</option>
+                      <option>240 (4 hrs)</option>
+                      <option>255</option>
+                      <option>270</option>
+                      <option>285</option>
+                      <option>300 (5 hrs)</option>
+                      <option>315</option>
+                      <option>330</option>
+                      <option>345</option>
+                      <option>360 (6 hrs)</option>
+                  </select>
                   <button>Minutes</button>
               </div>
               <br>
@@ -90,7 +114,6 @@
               </div>
               <br>
             </div>
-            <div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="null" data-iconpos="null" data-theme="b" class="ui-btn ui-shadow ui-btn-corner-all ui-submit ui-btn-up-b" aria-disabled="false"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text"></span></span><button type="submit" href="rules-added.html" data-theme="b" name="submit" value="submit-value" class="ui-btn-hidden" aria-disabled="false">Create Rule</button></div>
             <div data-role="popup" id="popupBasic">
               <h3 style="text-align: center;">Notification</h3>
               <p style="text-align: center;">Chase has exceeded his maximum session time. Would you like to power down the console?</p>
@@ -98,7 +121,16 @@
               <a href="#" data-rel="back" class="ui-btn left">No</a>
             </div>
       </fieldset>
+      <div data-role="footer" data-position="fixed">
+          <div data-role="navbar">
+              <ul>
+                  <li><a href="rules.html">Cancel</a></li>
+                  <li><a href="rules-added.html" class="ui-btn-active ui-state-persist">Create Rule!</a></li>
+              </ul>
+          </div>
+      </div><!-- /footer -->
   </div><!-- /content -->
+<!-- <<<<<<< HEAD
 
   <div data-role="footer" data-position="fixed">
       <div data-role="navbar">
@@ -108,6 +140,8 @@
           </ul>
       </div>
   </div><!-- /footer -->
-</div>
+<!--</div>
 
+=======
+>>>>>>> ea7167b3e9c50d033a786b517e8c7b1c3446210f -->
 </html>

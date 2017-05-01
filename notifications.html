@@ -14,14 +14,26 @@
 	</head>
 	
 	<div data-role="page" id="rules" data-theme="b">
+    <div data-role="panel" id="mypanel">
+        <h2 align="center">Menu</h2>
+    <br>
+        <ul data-role="listview">
+            <li><a href="players.html" style="color: #ffffff" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a></li>
+            <li><a href="library.html" style="color: #ffffff" class="ui-btn ui-icon-grid ui-btn-icon-right">Library</a></li>
+            <li><a href="browse.html" style="color: #ffffff" class="ui-btn ui-icon-shop ui-btn-icon-right">Browse</a></li>
+            <li><a href="rules.html" style="color: #ffffff" class="ui-btn ui-icon-lock ui-btn-icon-right">Rules</a></li>
+            <li><a href="notifications.html" style="color: #ffffff" class="ui-btn ui-icon-comment ui-btn-icon-right">Notifications</a></li>
+        </ul>
+    </div><!-- /panel -->
+    <div data-role="header" data-position="fixed">
+    <a href="#mypanel" class="ui-btn-left" data-icon="bars">Menu</a>
 
 		<div data-role="header">
+			<h1 align="center">Notifications</h1>
 	    </div>
 
 	    <div data-role="content">
 		    <body>
-		    	<a href="games.html" data-rel="back" class="ui-btn" data-icon="ui-icon-back">Back</a>
-		        <h1 align="center">Notifications</h1>
 		        <br>
 		        <p align="center" style="border:3px; border-style:solid; border-color:000000; padding: 1em;">Tuesday: Chase overplayed for 2 hours</p>
 		        <p align="center" style="border:3px; border-style:solid; border-color:000000; padding: 1em;">Thursday: Chase played a Mature Game: (Fallout 4)</p>

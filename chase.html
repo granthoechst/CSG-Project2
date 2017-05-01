@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chase</title>
+    <!--update view based on the device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--get jquery mobile libraries and css-->
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css"></link>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<div data-role="page" id="players" data-theme="b">
+    <div data-role="header" data-position="fixed">
+      <a href="players.html" class="ui-btn-left" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
+        <h1>GameSense</h1>
+        <a href="add-rule.html" class="ui-btn-right" data-transition="slide" data-ajax="false" data-icon="ui-btn-icon-left ui-icon-lock">Add Rule</a>
+    </div><!-- /header -->
+
+    <div data-role="content">
+    	<div>
+    		<img class="propic" src="img/chase_propic.png" width="60px" height="60px" align="left"/>
+    		<h1 style="position:relative; left:30px; font-size:50px">Chase</h1>
+    		<p>Today</p><h2 style="font-size:30px;">2 hr 0 min</h2>
+    		<a href="game_info/mass_effect.html" data-ajax="false"><img style = "position: relative; border-style:solid; border-color:red" src="img/mass_effect.jpg" width="60px" height="90px"/></a>
+    		<a href="game_info/gta.html" data-ajax="false"><img style = "position: relative; left:15px" src="img/gta5.jpg" width="60px" height="90px"/></a>
+            <a href="game_info/ac.html" data-ajax="false"><img style = "position: relative; left:15px" src="img/creed.jpg" width="60px" height="90px"/></a>
+    		<br>
+    		<p>Notifications</p>
+    		<a href="#popupBasic" data-rel="popup">Chase Went Over His Limit (4/21)!</a>
+            <a href="#popupBasic" data-rel="popup">Chase Went Over His Limit (4/17)!</a>
+
+         </div>
+         
+
+    </div><!-- /content -->
+
+    <div data-role="content" id="popupVideo" data-overlay-theme="a" data-theme="a" data-tolerance="15,15" class="ui-content">
+
+        <center><iframe src="../grant-cal.html" width="330" height="375"></iframe></center>
+     
+    </div>
+
+
+    <div data-role="popup" id="popupBasic" data-theme="a">
+      <h3 style="text-align: center;">Notification</h3>
+      <p style="text-align: center;">Chase went over his play limit</p>
+      <a href="game_info/gta.html" data-rel="back" class="ui-btn ui-btn-active" data-ajax="false">Send Message</a>
+      <a href="#" data-rel="back" class="ui-btn left">Shut Down Console</a>
+      <a href="#" data-rel="back" class="ui-btn left">Ignore</a>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="grant">
+    <div data-role="header" data-position="fixed">
+        <!-- TODO 5: add a back button to the header; include the back icon on your back button -->
+        <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
+        <h1>Grant</h1>
+        <a href="rules.html" class="ui-btn-right" data-transition="slide" data-icon="ui-btn-icon-left ui-icon-lock">Rules</a>
+    </div>
+    <div data-role="content">
+        <h2>4.5 Hours Today</h2>
+        <center><img src="img/calendar.png" alt="Cal" width="300px"></center>
+    </div>
+
+
+    <label for="date">Date Input:</label>
+    <input type="date" name="date" id="date" value=""  />
+
+    <div data-role="footer" data-position="fixed">
+    </div><!-- /footer -->
+</div>
+
+
+
+<div data-role="page" id="steph">
+    <div data-role="header">
+        <!-- TODO 5: add a back button to the header; include the back icon on your back button -->
+        <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
+        <h1>Steph</h1>
+        <a href="rules.html" class="ui-btn-right" data-transition="slide" data-icon="ui-btn-icon-left ui-icon-lock">Rules</a>
+    </div>
+    <div data-role="content">
+        <h2>1.0 Hour Today</h2>
+        <center><img src="img/calendar.png" alt="Cal" width="300px"></center>
+    </div>
+
+
+    <label for="date">Date Input:</label>
+    <input type="date" name="date" id="date" value=""  />
+
+    <div data-role="footer">
+
+    </div><!-- /footer -->
+</div>
+
+
+<div data-role="page" id="all">
+    <div data-role="header">
+        <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
+        <h1>Total Playtime</h1>
+        <a href="rules.html" class="ui-btn-right" data-transition="slide" data-icon="ui-btn-icon-left ui-icon-lock">Rules</a>
+    </div>
+    <div data-role="content">
+        <h2>5.5 Hours Total Today</h2>
+        <center><img src="img/calendar.png" alt="Cal" width="300px"></center>
+    </div>
+
+
+    <label for="date">Date Input:</label>
+    <input type="date" name="date" id="date" value=""  />
+
+    <div data-role="footer">
+
+    </div><!-- /footer -->
+</div>
+
+
+
+</html>

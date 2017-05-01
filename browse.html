@@ -11,8 +11,22 @@
     </head>
     <body>
     <div data-role="page" data-theme="b">
-        <a href="games.html" data-rel="back" class="ui-btn" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
+    <div data-role="panel" id="mypanel">
+        <h2 align="center">Menu</h2>
+    <br>
+        <ul data-role="listview">
+            <li><a href="players.html" style="color: #ffffff" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a></li>
+            <li><a href="library.html" style="color: #ffffff" class="ui-btn ui-icon-grid ui-btn-icon-right">Library</a></li>
+            <li><a href="browse.html" style="color: #ffffff" class="ui-btn ui-icon-shop ui-btn-icon-right">Browse</a></li>
+            <li><a href="rules.html" style="color: #ffffff" class="ui-btn ui-icon-lock ui-btn-icon-right">Rules</a></li>
+            <li><a href="notifications.html" style="color: #ffffff" class="ui-btn ui-icon-comment ui-btn-icon-right">Notifications</a></li>
+        </ul>
+    </div><!-- /panel -->
+    <div data-role="header" data-position="fixed">
+    <a href="#mypanel" class="ui-btn-left" data-icon="bars">Menu</a>
         <h1 align="center">Browse for Games</h1>
+    </div>
+    <div data_role="content">
         <h2 align="center">First Person Shooters</h2>
         <p align="center"><img src="img/titanfall2.jpg" height="150" width="100">
             <a href="game_info/doom.html"><img src="img/doom.jpg" height="150" width="100"></a>

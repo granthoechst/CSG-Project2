@@ -16,18 +16,14 @@
 
 <div data-role="page" id="players" data-theme="b">
     <div data-role="panel" id="mypanel">
-    <h2 align="center">Games</h2>
-        <ul style="list-style: none;">
-            <br>
-            <li><a href="players.html" style="color: #ffffff">Home</a></li>
-            <br>
-            <li><a href="library.html" style="color: #ffffff">Library</a></li>
-            <br>
-            <li><a href="browse.html" style="color: #ffffff">Browse</a></li>
-            <br>
-            <li><a href="rules.html" style="color: #ffffff">Rules</a></li>
-            <br>
-            <li><a href="notifications.html" style="color: #ffffff">Notifications</a></li>
+    <h2 align="center">Menu</h2>
+    <br>
+        <ul data-role="listview">
+            <li><a href="players.html" style="color: #ffffff" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a></li>
+            <li><a href="library.html" style="color: #ffffff" class="ui-btn ui-icon-grid ui-btn-icon-right">Library</a></li>
+            <li><a href="browse.html" style="color: #ffffff" class="ui-btn ui-icon-shop ui-btn-icon-right">Browse</a></li>
+            <li><a href="rules.html" style="color: #ffffff" class="ui-btn ui-icon-lock ui-btn-icon-right">Rules</a></li>
+            <li><a href="notifications.html" style="color: #ffffff" class="ui-btn ui-icon-comment ui-btn-icon-right">Notifications</a></li>
         </ul>
     </div><!-- /panel -->
     <div data-role="header" data-position="fixed">
@@ -65,6 +61,10 @@
       <p style="text-align: center;">Chase has exceeded his maximum session time.</p>
       <a href="#" data-rel="back" class="ui-btn ui-btn-active">Send Reminder</a>
       <a href="#" data-rel="back" class="ui-btn left">Power Down Console</a>
+        <textarea>
+            Send a message to the player.....
+        </textarea>
+      <a href="#" data-rel="back" class="ui-btn left">Send a Message</a>
       <a href="#" data-rel="back" class="ui-btn left">Ignore</a>
     </div>
     <!-- <div data-role="footer" data-position="fixed">

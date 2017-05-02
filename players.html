@@ -59,14 +59,30 @@
     <div data-role="popup" id="popupBasic" data-theme="a">
       <h3 style="text-align: center;">Notification</h3>
       <p style="text-align: center;">Chase has exceeded his maximum session time.</p>
-      <a href="#" data-rel="back" class="ui-btn ui-btn-active">Send Reminder</a>
-      <a href="#" data-rel="back" class="ui-btn left">Power Down Console</a>
-        <textarea>
-            Send a message to the player.....
-        </textarea>
-      <a href="#" data-rel="back" class="ui-btn left">Send a Message</a>
-      <a href="#" data-rel="back" class="ui-btn left">Ignore</a>
+      <a href="#" data-rel="back" class="ui-btn ui-btn-active" data-position-to="window">Send Reminder</a>
+        <textarea placeholder="Send a message to the player..." style="resize:none"></textarea>
+      <a href="#" data-rel="back" class="ui-btn left" data-position-to="window">Power Down Console</a>
+      <a href="#" data-rel="back" class="ui-btn left" data-position-to="window">Ignore</a>
+       
     </div>
+
+    <!-- <div data-role="popup" id="reminder" data-theme="a">
+        <h3>Reminder Sent!></h3>
+    </div> -->
+
+    <!-- <div data-role="popup" id="sure" data-theme="a">
+      <h3>Are you sure you want to power down?></h3>
+      <a href="#power" data-rel="back" class="ui-btn ui-btn-active">Power down</a>
+      <a href="#" data-rel="back" class="ui-btn left">Cancel</a>
+    </div>
+
+    <div data-role="popup" id="power" data-theme="a">
+      <h3>Console put into sleep mode.></h3>
+    </div>
+
+    <div data-role="popup" id="ignore" data-theme="a">
+      <h3>Notification Ignored.></h3>
+    </div> -->
     <!-- <div data-role="footer" data-position="fixed">
         <div data-role="navbar">
             <ul>

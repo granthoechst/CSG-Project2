@@ -12,11 +12,12 @@
 	    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
 	</head>
-	
+
 	<div data-role="page" id="rules" data-theme="b">
     <div data-role="panel" id="mypanel">
-        <h2 align="center">Menu</h2>
-    <br>
+        <h2 align="center" style="position:relative; top:10px;">Menu</h2>
+				<img src="img/GS_logo.png" width="90px" style="position:relative; left:-10px; top:-70px;">
+
         <ul data-role="listview">
             <li><a href="players.html" style="color: #ffffff" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a></li>
             <li><a href="library.html" style="color: #ffffff" class="ui-btn ui-icon-grid ui-btn-icon-right">Library</a></li>
@@ -34,12 +35,35 @@
 
 	    <div data-role="content">
 		    <body>
-		        <br>
-		        <p align="center" style="border:3px; border-style:solid; border-color:000000; padding: 1em;">Tuesday: Chase overplayed for 2 hours</p>
-		        <p align="center" style="border:3px; border-style:solid; border-color:000000; padding: 1em;">Thursday: Chase played a Mature Game: (Fallout 4)</p>
-		        <p align="center" style="border:3px; border-style:solid; border-color:000000; padding: 1em;">Monday: Scott played online for 3 hours</p>
-		        <p align="center" style="border:3px; border-style:solid; border-color:000000; padding: 1em;">Monday: Chase has a new friend request from: Xboxdude24</p>
-		        <br>
+						<h3>Recent Activity</h3>
+	          <div class="ui-collapsible-content">
+	            <ul data-role="listview">
+	              <li data-role="list-divider">Monday, May 2, 2017</li>
+	              <li><a href="#popupBasic" data-rel="popup" data-position-to="window" class="ui-btn">Chase played a T-rated game. <p style=" padding-top:2px;"class="ui-li-aside ui-li-desc"><strong>6:24</strong>PM</p></a></li>
+
+								<li><a href="#popupBasic" data-rel="popup" data-position-to="window" class="ui-btn">Chase's play limit exceeded. <p style=" padding-top:2px;"class="ui-li-aside ui-li-desc"><strong>2:35</strong>PM</p></a></li>
+	              <li data-role="list-divider">Monday, May 1, 2017</li>
+	              <li><a href="#popupBasic" data-rel="popup" data-position-to="window" class="ui-btn">Chase played a T-rated game. <p style=" padding-top:2px;"class="ui-li-aside ui-li-desc"><strong>6:15</strong>PM</p></a></li>
+								<li><a href="#popupBasic" data-rel="popup" data-position-to="window" class="ui-btn">Grant's play limit exceeded. <p style=" padding-top:2px;"class="ui-li-aside ui-li-desc"><strong>5:24</strong>PM</p></a></li>
+								<li><a href="#popupBasic" data-rel="popup" data-position-to="window" class="ui-btn">Grant played an M-rated game. <p style=" padding-top:2px;"class="ui-li-aside ui-li-desc"><strong>3:46</strong>PM</p></a></li>
+
+	              <li data-role="list-divider">Sunday, April 30, 2017</li>
+								<li><a href="#popupBasic" data-rel="popup" data-position-to="window" class="ui-btn">Grant received request from ChunkDirty. <p style=" padding-top:2px;"class="ui-li-aside ui-li-desc"><strong>7:46</strong>AM</p></a></li>
+	              <li><a href="#popupBasic" data-rel="popup" data-position-to="window" class="ui-btn">Chase received request from ChunkDirty. <p style=" padding-top:2px;"class="ui-li-aside ui-li-desc"><strong>7:24</strong>AM</p></a></li>
+								<li data-role="list-divider">Sunday, April 29, 2017</li>
+								<li data-role="list-divider">Sunday, April 28, 2017</li>
+
+							</ul>
+	          </div>
+						<div data-role="popup" id="popupBasic" data-theme="a">
+				      <h3 style="text-align: center;">Notification</h3>
+				      <p style="text-align: center;">Chase has exceeded his maximum session time.</p>
+				      <a href="#" data-rel="back" class="ui-btn ui-btn-active" data-position-to="window">Send Reminder</a>
+				        <textarea placeholder="Send a message to the player..." style="resize:none"></textarea>
+				      <a href="#" data-rel="back" class="ui-btn left" data-position-to="window">Power Down Console</a>
+				      <a href="#" data-rel="back" class="ui-btn left" data-position-to="window">Ignore</a>
+
+				    </div>
 		    </body>
     </div>
 </div>

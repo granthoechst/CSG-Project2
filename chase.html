@@ -40,8 +40,9 @@
     </div><!-- /header -->
 
     <div>
-      <img class="propic" src="img/chase_propic.jpg" width="60px" height="60px" align="left" style="position:relative; left:18px;"/>
+      <img class="propic" src="img/chase_propic.png" width="60px" height="60px" align="left" style="position:relative; left:18px;"/>
       <h1 style="position:relative; left:40px; font-size:50px">Chase</h1>
+      <h4 style="position:relative; top:-20px; left:40px; color:#3876d1;">Status: Online</h4>
     </div>
     <div data-role="content">
       <div data-role="collapsible" data-collapsed="false">
@@ -52,11 +53,13 @@
           <h3>Recent Activity</h3>
           <div class="ui-collapsible-content">
             <ul data-role="listview">
+              <li data-role="list-divider">Monday, May 2, 2017</li>
+              <li><a href="#popupBasic" data-rel="popup" data-position-to="window" class="ui-btn">Played a T-rated game. <p style=" padding-top:2px;"class="ui-li-aside ui-li-desc"><strong>6:24</strong>PM</p></a></li>
+              <li><a href="#popupBasic" data-rel="popup" data-position-to="window" class="ui-btn">Play limit exceeded. <p style=" padding-top:2px;"class="ui-li-aside ui-li-desc"><strong>2:35</strong>PM</p></a></li>
               <li data-role="list-divider">Monday, May 1, 2017</li>
-              <li><a href="#popupBasic" data-rel="popup" data-position-to="window" class="ui-btn">Play limit exceeded. <p style=" padding-top:2px;"class="ui-li-aside ui-li-desc"><strong>6:24</strong>PM</p></a></li>
-              <li><a href="#popupBasic" data-rel="popup" data-position-to="window" class="ui-btn">Played an M-rated game. <p style=" padding-top:2px;"class="ui-li-aside ui-li-desc"><strong>6:24</strong>PM</p></a></li>
+              <li><a href="#popupBasic" data-rel="popup" data-position-to="window" class="ui-btn">Played a T-rated game. <p style=" padding-top:2px;"class="ui-li-aside ui-li-desc"><strong>6:15</strong>PM</p></a></li>
               <li data-role="list-divider">Sunday, April 30, 2017</li>
-              <li><a href="#popupBasic" data-rel="popup" data-position-to="window" class="ui-btn">Request from ChunkDirty. <p style=" padding-top:2px;"class="ui-li-aside ui-li-desc"><strong>6:24</strong>PM</p></a></li>
+              <li><a href="#popupBasic" data-rel="popup" data-position-to="window" class="ui-btn">Request from ChunkDirty. <p style=" padding-top:2px;"class="ui-li-aside ui-li-desc"><strong>7:24</strong>AM</p></a></li>
             </ul>
           </div>
       </div>
@@ -66,6 +69,13 @@
           	<div class="ui-block-a"><a href="game_info/gta.html" data-ajax="false"><img src="img/gta5.jpg" width="60px" height="90px"/></a></div>
           	<div class="ui-block-b"><a href="game_info/halo5.html" data-ajax="false"><img src="img/halo_5.png" width="60px" height="90px"/></a></div>
           	<div class="ui-block-c"><a href="game_info/gta.html" data-ajax="false"><img src="img/gta5.jpg" width="60px" height="90px"/></a></div>
+          </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="false">
+          <h3>Wishlist:</h3>
+          <div class="ui-grid-a" align="center">
+          	<div class="ui-block-a"><a href="game_info/mass_effect.html" data-ajax="false"><img src="img/mass_effect.jpg" width="60px" height="90px"/></a></div>
+          	<div class="ui-block-b"><a href="game_info/halo5.html" data-ajax="false"><img src="img/ghostrecon.jpg" width="60px" height="90px"/></a></div>
           </div>
       </div>
       <!-- <div data-role="collapsible" data-collapsed="false">
@@ -82,10 +92,12 @@
 
     <div data-role="popup" id="popupBasic" data-theme="a">
       <h3 style="text-align: center;">Notification</h3>
-      <p style="text-align: center;">Grant played an M-Rated game (Grand Theft Auto V).</p>
-      <a href="game_info/gta.html" data-rel="back" class="ui-btn ui-btn-active" data-ajax="false">Send Message</a>
-      <a href="#" data-rel="back" class="ui-btn left">Shut Down Console</a>
-      <a href="#" data-rel="back" class="ui-btn left">Ignore</a>
+      <p style="text-align: center;">Chase has exceeded his maximum session time.</p>
+      <a href="#" data-rel="back" class="ui-btn ui-btn-active" data-position-to="window">Send Reminder</a>
+        <textarea placeholder="Send a message to the player..." style="resize:none"></textarea>
+      <a href="#" data-rel="back" class="ui-btn left" data-position-to="window">Power Down Console</a>
+      <a href="#" data-rel="back" class="ui-btn left" data-position-to="window">Ignore</a>
+
     </div>
     <div data-role="footer" data-position="fixed">
 
